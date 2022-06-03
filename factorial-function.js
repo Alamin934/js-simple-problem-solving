@@ -1,11 +1,12 @@
+//Factorial with function
+
 function getFactorial(number) {
     let factorial = 1;
-    for (let i = 1; i <= number; i++) {
+    for (let i = 1; i <= 5; i++) {
         factorial = factorial * i;
-        // console.log(factorial);
+        console.log(i, factorial);
     }
-    return factorial;
+    console.log(factorial);
 }
 
-let firstFactorial = getFactorial(7);
-console.log('factorial of 7 is ', firstFactorial);
+getFactorial(7);
