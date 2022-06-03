@@ -1,9 +1,12 @@
-function factorial(n) {
+// factorial recursion n*(n-1)!
+
+function recursionFactorial(n) {
     if (n == 1) {
         return 1;
     }
-    return n * factorial(n - 1);
+
+    return n * recursionFactorial(n - 1);
+
 }
 
-const myFactorial = factorial(6);
-console.log(myFactorial);
+recursionFactorial(5);
